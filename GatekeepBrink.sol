@@ -8,7 +8,7 @@ import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v4.7
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v4.7/contracts/token/ERC20/ERC20.sol";
 
 contract GatekeepBrink is Ownable, AccessControl  {
-    address public gatekeepGuard = 0xB39edB8F9cA3c14E1E7978823E981e3fBe03B235;
+    address public gatekeepGuard = 0xb265251f1084397bdBb434b932a6070220F3784A;
     address public userAddress;
     address public safeAddress;
     address public brinkAddress;
@@ -32,12 +32,12 @@ contract GatekeepBrink is Ownable, AccessControl  {
     }
 
     function setUserAddress(address userAddress_ ) external onlyOwner {
-        // Set wallet address to be actively monitored
+        // Set wallet address to be actively monitored.
         userAddress = userAddress_;
     }
 
     function setSafeAddress(address safeAddress_ ) external onlyOwner {
-        // Set address ( cold wallet reccomended ) that will act as a vault. Assets will be transferred here.
+        // Set address ( cold wallet recommended ) that will act as a vault. Assets will be transferred here.
         safeAddress = safeAddress_;
     }
 
