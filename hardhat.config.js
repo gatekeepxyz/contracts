@@ -9,7 +9,7 @@ module.exports = {
     hardhat: {
     },
     goerli: {
-      url: process.env.ALCHEMY_URL,
+      url: process.env.URL,
       accounts: [`0x${process.env.GUARDPK}`, `0x${process.env.RANDOMUSERPK}`]
     }
   },
