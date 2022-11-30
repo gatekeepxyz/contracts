@@ -1,0 +1,30 @@
+{
+  "name": "contracts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gatekeepxyz/contracts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gatekeepxyz/contracts/issues"
+  },
+  "homepage": "https://github.com/gatekeepxyz/contracts#readme",
+  "dependencies": {
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "@openzeppelin/contracts": "^4.8.0",
+    "chai": "^4.3.7",
+    "dotenv": "^16.0.3",
+    "ethereum-waffle": "^3.4.4",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.12.3",
+    "i": "^0.3.7",
+    "npm": "^9.1.2"
+  }
+}

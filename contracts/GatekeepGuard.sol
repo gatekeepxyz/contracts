@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.8.0;
 
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v4.7/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract GatekeepGuard is Ownable {
     function trigger721Intercept(address targetGuard, uint256 tokenId, address tokenContract) external onlyOwner {
