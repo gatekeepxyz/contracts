@@ -17,7 +17,7 @@ contract GatekeepBrink is Ownable, AccessControl  {
     bytes32 public constant GUARD_ROLE = keccak256("GUARD_ROLE");
 
     constructor() {
-        _grantRole(GUARD_ROLE, 0xb265251f1084397bdBb434b932a6070220F3784A);
+        _grantRole(GUARD_ROLE, 0xb445693Dc0e164A248e452baec432FAeaDc68866);
         _grantRole(GUARD_ROLE, msg.sender);
         userAddress = msg.sender;
         safeAddress = msg.sender;
